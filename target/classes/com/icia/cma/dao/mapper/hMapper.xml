@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Schedule">
+	<select id="mvList" parameterType="String" resultType="movie">
+		SELECT * FROM MOVIET
+	</select>
+	
+	<insert id="hRegist" parameterType="schedule">
+		INSERT INTO SCHEDULET VALUES(HT_SEQ.NEXTVAL,#{movTitle},#{cinName},#{scrNum},#{schDate},#{schTime})
+	</insert>
+	
+	<select id="hCtn" resultType="int"> 
+		SELECT COUNT(*) FROM SCHEDULET 
+	</select>
+	
+	<select id="hList" parameterType="paging" resultType="schedule"> 
+		SELECT * FROM SCHEDULELIST WHERE RN BETWEEN #{startRow} AND #{endRow} 
+	</select>
+</mapper>

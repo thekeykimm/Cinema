@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+#ticket {
+	width: 100%;
+	height: 700px;
+}
+
+.select-contents h1 {
+	text-align: center;
+	width: 80%;
+	margin-left: 120px;
+	border: 1px solid lightpink;
+	background-color: black;
+	color: #fff;
+	margin-top: 80px;
+}
+
+#select-movie {
+	line-height: 25px;
+	padding-left: 120px;
+}
+
+#select-movie h4 {
+	text-align: center;
+	width: 315px;
+	border: 1px solid lightpink;
+	background-color: black;
+	color: #fff;
+}
+
+#select-movie li {
+	border-left: 1px solid #1b0235;
+	border-right: 1px solid #1b0235;
+	width: 315px;
+	height: 40px;
+	line-height: 40px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#select-movie, #select-theater, #select-date, #select-time {
+	display: inline-block;
+}
+
+.movie-body, .theater-body, .date-body, .time-body {
+	height: 600px;
+	overflow: auto;
+	width: 334px;
+}
+
+#select-theater {
+	line-height: 25px;
+	padding-left: 10px;
+}
+
+#select-theater h4 {
+	text-align: center;
+	width: 315px;
+	border: 1px solid lightpink;
+	background-color: black;
+	color: #fff;
+}
+
+#select-theater li {
+	border-left: 1px solid #1b0235;
+	border-right: 1px solid #1b0235;
+	width: 315px;
+	height: 40px;
+	line-height: 40px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#select-date {
+	line-height: 25px;
+	padding-left: 10px;
+}
+
+#select-date h4 {
+	text-align: center;
+	width: 115px;
+	border: 1px solid lightpink;
+	background-color: black;
+	color: #fff;
+}
+
+#select-date li {
+	border-left: 1px solid #1b0235;
+	border-right: 1px solid #1b0235;
+	width: 115px;
+	height: 40px;
+	line-height: 40px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#select-date .date-body {
+	width: 133.2px;
+}
+
+#select-time {
+	line-height: 25px;
+	padding-left: 10px;
+}
+
+#select-time h4 {
+	text-align: center;
+	width: 371px;
+	border: 1px solid lightpink;
+	background-color: black;
+	color: #fff;
+}
+
+#select-time li {
+	border-left: 1px solid #1b0235;
+	border-right: 1px solid #1b0235;
+	width: 371px;
+	height: 40px;
+	line-height: 40px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#select-time .time-body {
+	width: 390px;
+}
+
+#select-movie a, #select-theater a, #select-date a, #select-time a {
+	color: black;
+}
+
+.movie-date-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.movie-date-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 0px;
+    background-color: #fff;
+}
+
+.movie-week-of-day {
+    margin-left: 5px;
+    font-size: 10px;
+    width: 12px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.movie-day {
+    text-align: center;
+    width: 34px;
+    height: 22px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.saturday {
+    color: #31597E;
+    font-weight: bold;
+}
+
+.sunday {
+    color: #AF2D2D;
+    font-weight: bold;
+}
+
+.movie-date-wrapper-active {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.movie-date-wrapper-active>* {
+    color: black;
+}
+
+.movie-date-wrapper-active>.saturday {
+    color: #31597E;
+    font-weight: bold;
+}
+
+.movie-date-wrapper-active>.sunday {
+    color: #AF2D2D;
+    font-weight: bold;
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost:9091/cma/ticketing -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>달팽이 상영관</title>
+<link href="./달팽이 상영관_files/bootstrap.min.css" rel="stylesheet">
+<link href="./달팽이 상영관_files/font-awesome.min.css" rel="stylesheet">
+<link href="./달팽이 상영관_files/global.css" rel="stylesheet">
+<link href="./달팽이 상영관_files/index.css" rel="stylesheet">
+<link href="./달팽이 상영관_files/table.css" rel="stylesheet">
+<link href="./달팽이 상영관_files/ticketing.css" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="http://localhost:9091/cma/resources/favicon.ico">
+<link href="./달팽이 상영관_files/css2" rel="stylesheet">
+<script src="./달팽이 상영관_files/bootstrap.bundle.min.js.다운로드"></script>
+
+</head>
+<body>
+	<!-- ======= Header ======= -->
+	
+	<!-- header -->
+	<section id="top" style="background-color: #fff;">
+		<div class="container">
+			<div class="row top_1">
+				<div class="col-md-3">
+					<div class="top_1l pt-1">
+						<a class="text-white" href="http://localhost:9091/cma/"> <strong style="font-size: 28px; color: black;"> <img src="./달팽이 상영관_files/snail.png" style="width: 50px; height: 50px;">달팽이 상영관
+						</strong>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="top_1m">
+						<div class="input-group">
+							<input type="text" class="form-control bg-black" placeholder="영화 검색..."> <span class="input-group-btn">
+								<button class="btn btn text-white bg_red rounded-0 border-0" type="button">Search</button>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="top_1r text-end">
+						<ul>
+							<li><a href="http://localhost:9091/cma/mJoinForm" style="color:black; background-color:#fff;"><strong>회원가입</strong> </a></li>
+
+							<li><a href="http://localhost:9091/cma/mLoginForm" style="color:black; background-color:#fff;"><strong>로그인</strong> </a></li>
+
+							<li><a href="http://localhost:9091/cma/mLoginForm" style="color:black; background-color:#fff;"><strong>마이페이지</strong> </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="header">
+		<nav class="navbar navbar-expand-md navbar-light" id="navbar_sticky">
+			<div class="container">
+				<a class="navbar-brand text-white fw-bold" href="http://localhost:9091/cma/"><img src="./달팽이 상영관_files/snail.png" style="width: 50px; height: 50px;">
+					달팽이 상영관</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mb-0">
+						<li class="nav-item"><a class="nav-link" href="http://localhost:9091/cma/eList">영화선택</a></li>
+						<li class="nav-item"><a class="nav-link" href="http://localhost:9091/cma/cList">극장선택</a></li>
+						<li class="nav-item"><a class="nav-link" href="http://localhost:9091/cma/ticketing" style="color: red;">예매하기</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+			<!-- end header -->
+	<!-- End Header -->
+
+	<div id="ticket">
+		<div class="select-contents">
+			<h1>영화예매</h1>
+			<div id="select-movie">
+				<div class="head">
+					<h4>영화</h4>
+				</div>
+				<div id="movieArea" class="movie-body"><ul><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="movLink0">다크나이트</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="movLink1">더 마블스</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="movLink2">서울의 봄</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="movLink3">프레디의 피자가게</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="movLink4">헝거게임 : 노래하는 새와 뱀의 발라드</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="movLink5">이빨요정 비올레타-요정나라로 돌아갈래!</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="movLink6">사채소년</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="movLink7">싱글 인 서울</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="movLink8">탑건-매버릭</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="movLink9">그대들은 어떻게 살 것인가</a></li></ul></div>
+			</div>
+
+			<div id="select-theater">
+				<div class="head">
+					<h4>극장</h4>
+				</div>
+				<div id="theaterArea" class="theater-body"><ul><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="cinLink0">CGV 인천</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="cinLink1">CGV 강남</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="cinLink2">CGV 부천역</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="cinLink3">CGV 시흥</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="cinLink4">CGV 김포</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="cinLink5">CGV 주안역</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="cinLink6">CGV 인천도화</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="cinLink7">CGV 부평</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="cinLink8">CGV 인천학익</a></li><li><a href="http://localhost:9091/cma/ticketing" undefined'="" id="cinLink9">CGV 홍대</a></li></ul></div>
+			</div>
+
+			<div id="select-date">
+				<div class="head">
+					<h4>날짜</h4>
+				</div>
+				<div class="date-body"><li class="movie-date-item"><button class="movie-date-wrapper"><span class="movie-week-of-day">목</span><span class="movie-day">19</span></button></li><li class="movie-date-item"><button class="movie-date-wrapper"><span class="movie-week-of-day">금</span><span class="movie-day">20</span></button></li><li class="movie-date-item"><button class="movie-date-wrapper"><span class="movie-week-of-day saturday">토</span><span class="movie-day saturday">21</span></button></li><li class="movie-date-item"><button class="movie-date-wrapper"><span class="movie-week-of-day sunday">일</span><span class="movie-day sunday">22</span></button></li><li class="movie-date-item"><button class="movie-date-wrapper"><span class="movie-week-of-day">월</span><span class="movie-day">23</span></button></li><li class="movie-date-item"><button class="movie-date-wrapper"><span class="movie-week-of-day">화</span><span class="movie-day">24</span></button></li><li class="movie-date-item"><button class="movie-date-wrapper"><span class="movie-week-of-day">수</span><span class="movie-day">25</span></button></li><li class="movie-date-item"><button class="movie-date-wrapper"><span class="movie-week-of-day">목</span><span class="movie-day">26</span></button></li><li class="movie-date-item"><button class="movie-date-wrapper"><span class="movie-week-of-day">금</span><span class="movie-day">27</span></button></li><li class="movie-date-item"><button class="movie-date-wrapper"><span class="movie-week-of-day saturday">토</span><span class="movie-day saturday">28</span></button></li><li class="movie-date-item"><button class="movie-date-wrapper"><span class="movie-week-of-day sunday">일</span><span class="movie-day sunday">29</span></button></li><li class="movie-date-item"><button class="movie-date-wrapper" style="
+    padding-right: 15px;
+    padding-left: 15px;
+"><span class="movie-week-of-day">월</span><span class="movie-day">30</span></button></li></div>
+			</div>
+
+			<div id="select-time">
+				<div class="head">
+					<h4>시간</h4>
+				</div>
+				<div class="time-body"></div>
+			</div>
+		</div>
+	</div>
+	<!-- ======= Footer ======= -->
+	
+
+<section id="footer">
+		<div class="footer_m clearfix">
+			<div class="container">
+				<div class="row footer_1">
+					<div class="col-md-4">
+						<div class="footer_1i">
+							<a class="text-white" href="http://localhost:9091/cma/"> <strong style="font-size: 28px; color: #fff;"> <img src="./달팽이 상영관_files/snail.png" style="width: 50px; height: 50px;">달팽이 상영관
+							</strong>
+							</a>
+							<p class="mt-3">Lorem ipsum dolor sit amet consect etur adi
+								pisicing elit sed do eiusmod tempor incididunt. Lorem ipsum
+								dolor sit amet consect etur.</p>
+							<h6 class="fw-normal" style="color:#fff">
+								<i class="fa fa-map-marker fs-5 align-middle col_red me-1"></i>
+								인천 미추홀구 매소홀로488번길 6-32 태승빌딩 5층 (22223)
+							</h6>
+							<h6 class="fw-normal mt-3" style="color:#fff">
+								<i class="fa fa-envelope fs-5 align-middle col_red me-1"></i>
+								snailcinema@ilbo.com
+							</h6>
+							<h6 class="fw-normal mt-3 mb-0" style="color:#fff">
+								<i class="fa fa-phone fs-5 align-middle col_red me-1"></i>
+								010-1234-5678
+
+							</h6>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="footer_1i">
+							<h4>
+								Flickr <span class="col_red">Stream</span>
+							</h4>
+							<div class="footer_1i1 row mt-4">
+								<div class="col-md-3 col-3">
+									<div class="footer_1i1i">
+										<div class="grid clearfix">
+											<figure class="effect-jazz mb-0">
+												<a href="http://localhost:9091/cma/ticketing#"><img src="./달팽이 상영관_files/4.jpg" height="70" class="w-100" alt="abc"></a>
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-3">
+									<div class="footer_1i1i">
+										<div class="grid clearfix">
+											<figure class="effect-jazz mb-0">
+												<a href="http://localhost:9091/cma/ticketing#"><img src="./달팽이 상영관_files/5.jpg" height="70" class="w-100" alt="abc"></a>
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-3">
+									<div class="footer_1i1i">
+										<div class="grid clearfix">
+											<figure class="effect-jazz mb-0">
+												<a href="http://localhost:9091/cma/ticketing#"><img src="./달팽이 상영관_files/6.jpg" height="70" class="w-100" alt="abc"></a>
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-3">
+									<div class="footer_1i1i">
+										<div class="grid clearfix">
+											<figure class="effect-jazz mb-0">
+												<a href="http://localhost:9091/cma/ticketing#"><img src="./달팽이 상영관_files/7.jpg" height="70" class="w-100" alt="abc"></a>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="footer_1i1 row mt-3">
+								<div class="col-md-3 col-3">
+									<div class="footer_1i1i">
+										<div class="grid clearfix">
+											<figure class="effect-jazz mb-0">
+												<a href="http://localhost:9091/cma/ticketing#"><img src="./달팽이 상영관_files/8.jpg" height="70" class="w-100" alt="abc"></a>
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-3">
+									<div class="footer_1i1i">
+										<div class="grid clearfix">
+											<figure class="effect-jazz mb-0">
+												<a href="http://localhost:9091/cma/ticketing#"><img src="./달팽이 상영관_files/9.jpg" height="70" class="w-100" alt="abc"></a>
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-3">
+									<div class="footer_1i1i">
+										<div class="grid clearfix">
+											<figure class="effect-jazz mb-0">
+												<a href="http://localhost:9091/cma/ticketing#"><img src="./달팽이 상영관_files/10.jpg" height="70" class="w-100" alt="abc"></a>
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-3">
+									<div class="footer_1i1i">
+										<div class="grid clearfix">
+											<figure class="effect-jazz mb-0">
+												<a href="http://localhost:9091/cma/ticketing#"><img src="./달팽이 상영관_files/11.jpg" height="70" class="w-100" alt="abc"></a>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="footer_1i">
+							<h4>
+								Sign <span class="col_red">Newsletter</span>
+							</h4>
+							<p class="mt-3">Subscribe to our newsletter list to get
+								latest news and updates from us</p>
+							<div class="input-group">
+								<input type="text" class="form-control bg-black" placeholder="Email"> <span class="input-group-btn">
+									<button class="btn btn text-white bg_red rounded-0 border-0" type="button">Subscribe</button>
+								</span>
+							</div>
+							<ul class="social-network social-circle mb-0 mt-4">
+								<li><a href="http://localhost:9091/cma/ticketing#" class="icoRss" title="Rss"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="http://localhost:9091/cma/ticketing#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="http://localhost:9091/cma/ticketing#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="http://localhost:9091/cma/ticketing#" class="icoGoogle" title="Google +"><i class="fa fa-youtube"></i></a></li>
+								<li><a href="http://localhost:9091/cma/ticketing#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer_b" class="pt-3 pb-3 bg_grey">
+		<div class="container">
+			<div class="row footer_1">
+				<div class="col-md-8">
+					<div class="footer_1l">
+						<p class="mb-0">
+							© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_red" href="http://www.templateonweb.com/">TemplateOnWeb</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer_1r">
+						<ul class="mb-0">
+							<li class="d-inline-block me-2"><a href="http://localhost:9091/cma/ticketing#">Home</a></li>
+							<li class="d-inline-block me-2"><a href="http://localhost:9091/cma/ticketing#">Features</a></li>
+							<li class="d-inline-block me-2"><a href="http://localhost:9091/cma/ticketing#">Pages</a></li>
+							<li class="d-inline-block me-2"><a href="http://localhost:9091/cma/ticketing#">Portfolio</a></li>
+							<li class="d-inline-block me-2"><a href="http://localhost:9091/cma/ticketing#">Blog</a></li>
+							<li class="d-inline-block"><a href="http://localhost:9091/cma/ticketing#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- End Footer -->
+
+<script src="./달팽이 상영관_files/jquery-latest.min.js.다운로드"></script>
+<script>
+	//영화 목록 불러오기
+	$.ajax({
+		type : "POST",
+		url : "tList",
+		dataType : "json",
+		success : function(list) {
+			console.log(list);
+
+			movieList(list);
+		},
+		error : function() {
+			alert('영화목록 불러오기 실패!');
+		}
+	});
+
+	function movieList(list) {
+		let output = "<ul>";
+		for ( let i in list) {
+			output += "<li><a href=''" + list[i].movLink +  "' id='movLink" + i + "'>"
+					+ list[i].movTitle + "</a></li>";
+		}
+		output += "</ul>";
+		$('#movieArea').html(output);
+
+		$('#movieArea a').click(function(event) {
+			event.preventDefault();
+			let index = $(this).attr('id').replace('movLink', '');
+			let movLink = list[index].movLink;
+			loadCinemaList(movLink);
+		});
+	}
+
+	//극장 목록 불러오기
+	function loadCinemaList(movLink) {
+		$.ajax({
+			type : "POST",
+			url : "hList",
+			dataType : "json",
+			success : function(list) {
+				console.log(list);
+
+				cinemaList(list);
+			},
+			error : function() {
+				alert('극장목록 불러오기 실패!');
+			}
+		});
+	}
+
+	function cinemaList(list) {
+		let output = "<ul>";
+		for ( let i in list) {
+			output += "<li><a href=''" + list[i].cinLink +  "' id='cinLink" + i + "'>"
+					+ list[i].cinName + "</a></li>";
+		}
+		output += "</ul>";
+		$('#theaterArea').html(output);
+		
+		$('#theaterArea a').click(function(event) {
+			event.preventDefault();
+			let index = $(this).attr('id').replace('cinLink', '');
+			let cinLink = list[index].cinLink;
+			loadDateList(cinLink);
+		});
+	}
+
+	// 날짜 불러오기
+	function loadDateList(cinLink){
+		const date = new Date();
+		console.log(date.getFullYear());
+		const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+		console.log(lastDay);
+		const reserveDate = document.querySelector(".date-body");
+		console.log(reserveDate);
+
+		const weekOfDay = [ "일", "월", "화", "수", "목", "금", "토" ]
+		const year = date.getFullYear();
+		const month = date.getMonth();
+		console.log(weekOfDay);
+		console.log(year);
+		console.log(month);
+		for (i = date.getDate(); i <= lastDay.getDate(); i++) {
+			const listItem = document.createElement("li");
+			const button = document.createElement("button");
+			const spanWeekOfDay = document.createElement("span");
+			const spanDay = document.createElement("span");
+			
+			// class넣기
+			listItem.classList = "movie-date-item";
+			button.classList = "movie-date-wrapper";
+			spanWeekOfDay.classList = "movie-week-of-day";
+			spanDay.classList = "movie-day";
+
+			const dayOfWeek = weekOfDay[new Date(year + "-" + month + "-" + i)
+					.getDay()];
+
+			if (dayOfWeek === "토") {
+				spanWeekOfDay.classList.add("saturday");
+				spanDay.classList.add("saturday");
+			} else if (dayOfWeek === "일") {
+				spanWeekOfDay.classList.add("sunday");
+				spanDay.classList.add("sunday");
+			}
+			spanWeekOfDay.innerHTML = dayOfWeek;
+			button.append(spanWeekOfDay);
+			
+			// 날짜넣기
+			spanDay.innerHTML = i;
+			button.append(spanDay);
+			// button.append();
+			listItem.append(button);
+			reserveDate.append(listItem);
+			
+			dayClickEvent(button);
+		}
+	}
+	
+	
+	function dayClickEvent(button){
+		button.addEventListener("click", function() {
+			const movieDateWrapperActive = document.querySelectorAll(".movie-date-wrapper-active");
+			movieDateWrapperActive.forEach((list) => {
+				list.classList.remove("movie-date-wrapper-active");
+			})
+			button.classList.add("movie-date-wrapper-active");
+		})
+	}
+</script>
+</body></html>

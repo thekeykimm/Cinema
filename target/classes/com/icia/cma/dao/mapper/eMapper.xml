@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Movie">
+	<insert id="eWrite" parameterType="movie">
+		INSERT INTO MOVIET
+		VALUES(VT_SEQ.NEXTVAL,#{movTitle},#{movOpenDate},
+		#{movGrade},#{movGenre},#{movRunTime}, #{movIntro}, #{movDirector},
+		#{movActors},#{movPosterName})
+	</insert>
+
+	<select id="eList" parameterType="paging" resultType="movie">
+		SELECT *
+		FROM MOVIELIST WHERE RN BETWEEN #{startRow} AND #{endRow}
+	</select>
+
+	<select id="eCtn" resultType="int">
+		SELECT COUNT(*) FROM MOVIET
+	</select>
+
+	<select id="eView" parameterType="int" resultType="movie"> 
+		SELECT * FROM MOVIET WHERE MOVNUM = #{movNum} 
+	</select>
+</mapper>

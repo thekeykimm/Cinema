@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Screen">
+	<insert id="sRegist" parameterType="screen">
+		INSERT INTO SCREENT
+		VALUES(RT_SEQ.NEXTVAL,#{ScrName},
+		#{CinName},#{ScrCnt})
+	</insert>
+
+	<select id="sCtn" resultType="int">
+		SELECT COUNT(*) FROM SCREENT
+	</select>
+
+	<select id="sList" parameterType="paging" resultType="screen">
+		SELECT *
+		FROM SCREENLIST WHERE RN BETWEEN #{startRow} AND #{endRow}
+	</select>
+</mapper>

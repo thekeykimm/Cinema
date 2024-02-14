@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ticketing">
+	<select id="vList" parameterType="String" resultType="movie">
+		SELECT *
+		FROM MOVIET
+	</select>
+
+	<select id="cList" parameterType="String" resultType="ticketing">
+		SELECT
+		CINNAME FROM SCHEDULET WHERE MOVTITLE = #{movTitle} GROUP BY CINNAME
+	</select>
+
+	<select id="dList" parameterType="String" resultType="ticketing">
+		SELECT
+		SCHDATE FROM SCHEDULET WHERE MOVTITLE = #{movTitle} AND CINNAME =
+		#{cinName}
+	</select>
+
+	<select id="tList" parameterType="String" resultType="ticketing">
+		SELECT *
+		FROM SCHEDULET WHERE MOVTITLE = #{movTitle} AND CINNAME = #{cinName}
+		AND SCHDATE = #{schDate}
+	</select>
+
+	<insert id="tSeat" parameterType="ticketing">
+		INSERT INTO TICKETINGT
+		VALUES(TT_SEQ.NEXTVAL,
+		#{TicTotalPeople},SYSDATE,#{TicPayMoney},#{mId},#{schNum})
+	</insert>
+
+	<select id="tCtn" resultType="int">
+		SELECT COUNT(*) FROM TICKETINGT
+	</select>
+
+
+
+
+
+
+
+</mapper>

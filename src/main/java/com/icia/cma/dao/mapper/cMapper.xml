@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Cinema">
+	<insert id="cRegist" parameterType="cinema"> 
+		INSERT INTO CINEMAT VALUES(#{CinName}, #{CinAddr}) 
+	</insert>
+	
+	<select id="cList" parameterType="paging" resultType="cinema"> 
+		SELECT * FROM CINEMALIST WHERE RN BETWEEN #{startRow} AND #{endRow} 
+	</select>
+	
+	<select id="cCtn" resultType="int"> 
+		SELECT COUNT(*) FROM CINEMAT 
+	</select>
+	
+	<select id="cineList" resultType="cinema">
+		SELECT * FROM CINEMAT
+	</select>
+</mapper>
